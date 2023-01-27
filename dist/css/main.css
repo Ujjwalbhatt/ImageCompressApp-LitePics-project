@@ -32,6 +32,7 @@ header {
    color: white ;
 }
 h1{
+  size: 4rem;
   margin-bottom: 2rem;
 }
 .logo_half{
