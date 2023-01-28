@@ -4,9 +4,9 @@ const counter = new Counter();
 const initApp = () => {
     const droparea = document.querySelector('.droparea');
 
-    const active = () => droparea.classList.add("green-border");
+    const active = () => droparea.classList.add("red-border");
 
-    const inactive = () => droparea.classList.remove("green-border");
+    const inactive = () => droparea.classList.remove("red-border");
 
     const prevents = (e) => e.preventDefault();
 
@@ -17,7 +17,7 @@ const initApp = () => {
     ['dragenter', 'dragover'].forEach(evtName => {
         droparea.addEventListener(evtName, active);
     });
-
+     
     ['dragleave', 'drop'].forEach(evtName => {
         droparea.addEventListener(evtName, inactive);
     });

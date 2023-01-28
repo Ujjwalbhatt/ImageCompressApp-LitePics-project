@@ -2,7 +2,7 @@ const imagemin = require("imagemin");
 const imageminJpegRecompress = require("imagemin-jpeg-recompress");
 const imageminPngquant = require("imagemin-pngquant");
 
-exports.handler = async (event, context) => {
+exports.handler = async (event) => {
     const params = JSON.parse(event.body);
     const { base64String, name, extension } = params;
     const base64Image = base64String.split(';base64').pop();

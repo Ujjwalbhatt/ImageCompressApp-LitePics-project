@@ -32,7 +32,7 @@ header {
    color: white ;
 }
 h1{
-  size: 4rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
 }
 .logo_half{
@@ -64,7 +64,7 @@ h1{
   font-size: 1rem;
 }
 
-.green-border {
+.red-border {
   border-color: rgb(242, 19, 19);
 }
 
