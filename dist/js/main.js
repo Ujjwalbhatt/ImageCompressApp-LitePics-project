@@ -120,7 +120,6 @@ const uploadFile = (file, fileID) => {
         const name = filename.slice(0, filename.length - (extension.length + 1));
         const body = { base64String, name, extension };
         const url = './.netlify/functions/compress_files';
-
         try {
             const fileStream = await fetch(url, {
                 method: "POST",
@@ -129,7 +128,8 @@ const uploadFile = (file, fileID) => {
             const imgJson = await fileStream.json();
             if (imgJson.error) return handleFileError(filename, fileID);
             updateProgressBar(file, fileID, imgJson);
-        } catch (err) {
+        } 
+        catch (err) {
             console.error(err);
         }
     });
