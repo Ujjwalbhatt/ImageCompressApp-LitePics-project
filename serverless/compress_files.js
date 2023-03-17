@@ -1,6 +1,6 @@
 const imagemin = require("imagemin");
 const imageminJpegRecompress = require("imagemin-jpeg-recompress");
-const imageminPngquant = require("imagemin-pngquant");
+const imageminPngquant = require("imagemin-pngquant") ;
 
 exports.handler = async (event) => {
     const params = JSON.parse(event.body);
