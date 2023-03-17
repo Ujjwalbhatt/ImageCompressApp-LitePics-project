@@ -12,7 +12,7 @@ exports.handler = async (event) => {
         const result = Buffer.from(base64Image, 'base64');
         const newImgBuffer = await imagemin.buffer(result, {
             destination: 'serverless/compress_files',
-            plugins: [
+            plugins: [ 
                 imageminJpegRecompress({
                     min: 20,
                     max: 60
