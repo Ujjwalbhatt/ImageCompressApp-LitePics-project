@@ -22,7 +22,7 @@ exports.handler = async (event) => {
                 })
             ]
         });
- 
+  
         const filesize = newImgBuffer.length;
         const base64CompString = newImgBuffer.toString('base64');
         const imageDataObj = { base64CompString, filename, filesize };
